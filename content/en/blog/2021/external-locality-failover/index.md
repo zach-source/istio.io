@@ -195,6 +195,9 @@ spec:
   trafficPolicy:
     tls:
       mode: SIMPLE
+      subjectAltNames:
+      - dynamodb.us-east-1.amazonaws.com
+      - dynamodb.us-west-1.amazonaws.com
     loadBalancer:
       simple: ROUND_ROBIN
       localityLbSetting:
